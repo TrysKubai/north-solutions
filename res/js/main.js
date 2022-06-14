@@ -3,6 +3,7 @@ const navLinks = document.querySelector(".side-navigation");
 const links = document.querySelectorAll(
   ".side-navigation a, .right-side__language"
 );
+const header = document.querySelector("header");
 const lines = document.querySelectorAll(".line");
 
 hambuger.addEventListener("click", () => {
@@ -10,6 +11,7 @@ hambuger.addEventListener("click", () => {
   lines[1].classList.toggle("invisible");
   lines[2].classList.toggle("bottomLine");
   navLinks.classList.toggle("open");
+  header.classList.toggle("fixed");
   links.forEach((link) => {
     link.classList.toggle("fade");
   });
