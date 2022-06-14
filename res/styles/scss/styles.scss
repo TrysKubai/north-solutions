@@ -623,7 +623,7 @@ body {
   position: absolute;
   right: 0;
   width: 30px;
-  @include mq480 {
+  @include mq1024 {
     display: none;
   }
   &::before {

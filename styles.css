@@ -690,7 +690,7 @@ body::-webkit-scrollbar {
   right: 0;
   width: 30px;
 }
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   .scroll-down {
     display: none;
   }
