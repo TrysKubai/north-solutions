@@ -13,7 +13,9 @@ hambuger.addEventListener("click", () => {
 links.forEach((link) => {
   link.addEventListener("click", () => {
     navToggle();
-    serviceToggle();
+    if (window.innerWidth <= 1024) {
+      serviceToggle();
+    }
   });
 });
 //service section hack >:D
